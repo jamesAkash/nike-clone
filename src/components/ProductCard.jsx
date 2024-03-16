@@ -10,8 +10,7 @@ const ProductCard = ({ imgURL, name, price }) => {
         <p className="text-slate-gray font-montserrat text-xl leading-normal">
           4.2
         </p>
-
-        <h3 className="text-2xl leading-normal font-semibold font-palanquin">
+        <h3 className=" text-2xl leading-normal font-semibold font-palanquin">
           {name}
         </h3>
         <p className="font-montserrat text-coral-red text-2xl font-semibold leading-normal">
