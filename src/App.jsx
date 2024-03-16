@@ -10,12 +10,16 @@ import {
   PopularProducts,
 } from "./sections";
 import Nav from "./components/Nav";
+import Advertisement from "./sections/Advertisement";
 
 const App = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="xl:padding-1 wide:padding-r padding-b">
+      <section className="pb-10 pt-20">
+        <Advertisement />
+      </section>
+      <section className="xl:padding-l sm:pt-0 sm:mt-0 wide:padding-r padding-b">
         <Hero />
       </section>
       <section className="padding">

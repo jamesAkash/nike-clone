@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full flex xl:flex-row justify-center min-h-screen gap-10 max-container   p-2"
+      className="w-full flex xl:flex-row justify-center min-h-screen gap-10 max-container sm:pt-0 sm:mt-0  p-2"
       id="home"
     >
       <div className=" relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
@@ -43,7 +43,7 @@ const Hero = () => {
           })}
         </div>
       </div>
-      <div className=" flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 big-primary bg-hero bg-cover bg-center relative">
+      <div className="flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 big-primary bg-hero bg-cover bg-center relative ">
         <img
           src={bigShoeImg}
           alt="big-show"
@@ -51,10 +51,10 @@ const Hero = () => {
           height={500}
           className="object-contain relative z-10"
         />
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%]">
-          {shoes.map((shoe) => {
+        <div className="hidden xl:flex sm:gap-6 gap-4 absolute -bottom-[5%]">
+          {shoes.map((shoe, i) => {
             return (
-              <div key={shoe}>
+              <div key={i}>
                 <ShoeCard
                   imgURL={shoe}
                   changeBigShoeImage={(shoe) => {
