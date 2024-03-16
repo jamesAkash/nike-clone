@@ -3,7 +3,7 @@ import { nikeAd } from "../assets/images";
 
 const Advertisement = () => {
   return (
-    <div className="flex flex-col items-center bg-gray-100 px-4 py-6">
+    <div id="home" className="flex flex-col items-center bg-gray-100 px-4 py-6">
       <h2 className="font-bold md:text-xl">Save Up to 40%</h2>
       <p className="font-bold">Shop all our new markdowns</p>
 
